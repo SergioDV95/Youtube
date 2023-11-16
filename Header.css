@@ -1,0 +1,358 @@
+:root {
+    --background-color:#000000f3;
+    --text-color: #F1F1F1;
+    --button-background-color:#ffffff18;
+    --button-background-hover: rgba(128, 128, 128, 0.363);
+}
+
+html {
+    font-size: 10px;
+    font-family: Roboto, Arial, sans-serif;
+    height: 100%;
+    width: 100vw;
+}
+
+body {
+    box-sizing: border-box;    
+    width: 100vw;
+    height: 100%;
+    color: var(--text-color);
+    font-size: 10px;
+    font-family: Roboto, Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+.Header_Fila {
+    box-sizing: border-box;
+    height: 7%;
+    width: 100%;
+    padding: 0 1vw;
+    display: grid;
+    grid-template-columns: 1fr 3.5fr 1fr;
+    gap: 10%;
+    font-size: 1.4rem;
+}
+
+.Header_PrimerElemento {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    justify-items: center;
+    gap: 10%;
+}
+
+.Header_PrimerElemento #Menu {
+    box-sizing: border-box;
+    font-size: 1.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30em;
+    border: var(--background-color);
+    background-color: solid var(--background-color);
+    box-sizing: border-box;
+    margin: 0;
+    height: 75%;
+    width: 90%;
+}
+
+.Header_PrimerElemento #Menu:hover {
+    cursor: pointer;    
+    border:  var(--button-background-color);
+    background-color: var(--button-background-color);
+}
+
+
+.Header_PrimerElemento #Icono_YT {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+#Icono_YT::before {
+    color: red;
+    box-sizing: content-box;
+    font-size: 1.5em;
+}
+
+.Header_PrimerElemento #Icono_YT #Youtube {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 2rem;
+    letter-spacing: -2px;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+sup {
+    font-weight: lighter;
+    font-size: xx-small;
+    color: solid var(--button-background-hover);
+}
+
+.Header_SegundoElemento {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Header_SegundoElemento .Buscador  {
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    box-sizing: border-box;    
+    height: 75%;
+    width: 85%;
+
+}
+
+.Header_SegundoElemento .Buscador #Barra {
+    text-indent: 1em;
+    font-size: 1.05em;
+    border-radius: 30em 0 0 30em;
+    border: 0.01em solid var(--button-background-color);
+    background-color: #121212;
+    color: #FFFFFFE0;
+}
+
+.Header_SegundoElemento .Buscador #Boton {
+    cursor: pointer;
+    border-radius: 0 30em 30em 0;
+    border: 0.01em solid var(--button-background-color);
+    background-color: var(--button-background-color);
+    color: var(--text-color);
+    justify-items: center;
+    align-items: center;
+    font-size: 1.35em;
+    width: 100%;
+}
+
+.Header_SegundoElemento .Buscador #Boton_voz {
+    cursor: pointer;
+    border-radius: 40em;
+    border: #121212;
+    background-color: #1b1b1b;
+    color: #FFFFFFE0;
+    margin-left: 10px;
+    box-sizing: border-box;
+    width: 60%;
+}
+
+.Header_SegundoElemento .Buscador #Boton_voz:hover {
+border:  var(--button-background-hover);
+background-color: var(--button-background-hover);
+}
+
+.Header_SegundoElemento .Buscador #Boton_voz #Microfono {
+    font-size: 1.45em;
+}
+
+.Header_SegundoElemento .Buscador #Barra::placeholder {
+    text-indent: 1em;
+}
+
+.Header_SegundoElemento .Buscador #Barra:focus {
+    border: 0.01em solid rgba(65, 113, 216, 0.877);
+    outline: 0;
+}
+
+.Header_TercerElemento {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+.Header_TercerElemento .Botones {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.Header_TercerElemento .Botones .Boton_Camara {
+    justify-items: center;
+    border-radius: 30em;
+    border: var(--background-color);
+    background-color: solid var(--background-color);
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    height: 75%;
+    width: 19%;
+}
+
+.Header_TercerElemento .Botones .Boton_Camara:hover {
+    cursor: pointer;    
+    border:  var(--button-background-color);
+    background-color: var(--button-background-color);
+}
+
+.Header_TercerElemento .Botones .Camara {
+    width: 70%;
+}
+
+.Header_TercerElemento .Botones .Boton_Campana{
+    justify-items: center;
+    border-radius: 30em;
+    border: var(--background-color);
+    background-color: solid var(--background-color);
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    height: 75%;
+    width: 19%;
+}
+
+.Header_TercerElemento .Botones .Boton_Campana:hover {
+    cursor: pointer;    
+    border:  var(--button-background-color);
+    background-color: var(--button-background-color);
+}
+
+.Header_TercerElemento .Botones .Campana {
+    width: 70%;
+}
+
+.Header_TercerElemento .Botones .Boton_Usuario {
+    justify-items: center;
+    border-radius: 30em;
+    border: var(--background-color);
+    background-color: solid var(--background-color);
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    height: 75%;
+    width: 22%;
+}
+
+.Header_TercerElemento .Botones .Boton_Usuario .Usuario {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 90%;
+}
+
+.Contenido_Principal {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    height: 93%;
+}
+
+.Contenido_Principal .Columna_Lateral {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 5%;
+    box-sizing: border-box;
+}
+
+.Contenido_Principal .Columna_Lateral .Botones {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    box-sizing: border-box;
+    gap: 0;
+    height: 50%;
+    padding: 0;
+    width: 100%;
+}
+
+.Contenido_Principal .Columna_Lateral .Botones .Boton {
+    border-radius: 10px;
+    border: 0 solid var(--background-color);
+    background-color: solid var(--background-color);
+    color: var(--text-color);
+    font-size: 1em;
+    box-sizing: border-box;
+    gap: 0px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    height: 90%;
+}
+
+.Contenido_Principal .Columna_Lateral .Botones .Boton:hover {
+    cursor: pointer;    
+    border:  var(--button-background-color);
+    background-color: var(--button-background-color);
+}
+
+.Contenido_Principal .Columna_Lateral .Botones .Boton .Nombre_Boton {
+    margin-top: 0;
+}
+
+.Contenido_Principal .Columna_Lateral .Botones .Boton svg {
+    width: 25%;
+    height: 25px;
+}
+
+#Capa_3, #Capa_4 {
+    width: 30%;
+}
+
+.Contenido_Principal .Columna_Central {
+    box-sizing: border-box;
+    height: 100%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.Contenido_Principal .Columna_Central .Fila_Categorias {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    flex-direction: row;
+}
+
+.Contenido_Principal .Columna_Central .Fila_Categorias .Botones {
+    justify-content: left;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    gap: 0;
+    display: grid;
+    grid-template-columns: 60px 120px 70px 80px 90px 120px 90px 110px 80px 80px 100px 80px 100px 80px 90px;
+}
+
+.Contenido_Principal .Columna_Central .Fila_Categorias .Botones .Boton {
+    cursor: pointer;
+    border-radius: 7px;
+    border: var(--button-background-color);
+    background-color: var(--button-background-color);
+    color: var(--text-color);
+    width: 90%;
+    height: 50%;
+    font-size: 1.4rem;
+    transition: 0.35s;
+}
+
+.Contenido_Principal .Columna_Central .Fila_Categorias .Botones .Boton:hover {
+    border:  var(--button-background-hover);
+    background-color: var(--button-background-hover);
+    transition: 0.35s;
+}
+
+#Boton_Todo {
+    background-color: var(--text-color);
+    color: var(--background-color);
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 456.81 456.1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 17.49px;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <g>
+        <path class="cls-1" d="m327.67,190.58c-41.4,23.9-81.83,47.23-122.88,70.93V119.65c40.9,23.61,81.44,47.01,122.88,70.93Z"/>
+        <rect class="cls-2" x="84.4" y="8.75" width="363.66" height="363.66"/>
+      </g>
+      <polyline class="cls-2" points="8.75 75.67 8.75 447.35 380.43 447.35"/>
+    </g>
+  </g>
+</svg>
